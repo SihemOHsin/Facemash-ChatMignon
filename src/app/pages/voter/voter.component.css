@@ -1,0 +1,39 @@
+.cat-image {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-image-1 {
+    background-color: rgb(235, 242, 245);
+}
+
+.cat-image-2 {
+    background-color: rgb(248, 248, 248);
+}
+
+.cat-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50% 50% 0;
+    object-fit: cover;
+    border: 8px solid #fff;
+    
+    
+}
+
+.cat-images-wrapper {
+    height: 100vh;
+    position: relative;
+}
+
+button {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:  rgb(248, 248, 248);
+    color: #35587D;
+    border: 3px solid #fff;
+}

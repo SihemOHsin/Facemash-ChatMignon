@@ -1,13 +1,8 @@
-
 <div class="container">
-  <h1>Chat Scores</h1>
-  
-  <ul>
-    <li *ngFor="let cat of catScores">
-      <div class="cat-item">
-        <img [src]="cat.url" alt="Cat">
-        <p>Score: {{ cat.score }}</p>
-      </div>
+  <ul class="cats-list">
+    <li class="cat-item" *ngFor="let cat of catScores">
+      <img [src]="cat.url" alt="Cat">
+      <p class="text-center">Score: <b>{{ cat.score }}</b></p>
     </li>
   </ul>
 </div>
