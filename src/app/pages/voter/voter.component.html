@@ -1,0 +1,21 @@
+ <!-- // display data test
+   <ul>
+    <li *ngFor="let image of chats.images">
+      <img [src]="image.url" alt="Cat">
+      <p>ID: {{ image.id }}</p>
+    </li>
+  </ul>
+   -->
+   <div class="container">
+    <div class="cat-images">
+      <div class="cat-image">
+        <img [src]="cat1.url" alt="Cat 1" (click)="voteChat(cat1)">
+      </div>
+      <div class="cat-image">
+        <img [src]="cat2.url" alt="Cat 2" (click)="voteChat(cat2)">
+      </div>
+    </div>
+    <button [routerLink]="['/score']">Voir les plus beaux chats</button>
+
+  </div>
+  
