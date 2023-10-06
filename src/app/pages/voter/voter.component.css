@@ -37,3 +37,8 @@ button {
     color: #35587D;
     border: 3px solid #fff;
 }
+
+button:hover {
+    background-color: rgb(235, 242, 245);
+    color: #052548; 
+}
