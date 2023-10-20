@@ -27,4 +27,5 @@ jobs:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
       - name: Deploy to Firebase
-        run: firebase deploy --token $FIREBASE_TOKEN --project <your-project-id>
+        run: firebase deploy --token $FIREBASE_TOKEN --project chatmignon-72a72
+
