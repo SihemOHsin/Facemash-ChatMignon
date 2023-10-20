@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { VoterComponent } from './pages/voter/voter.component';
 import { ScoreComponent } from './pages/score/score.component';
+import { ChatService } from './services/chat.service';
+import { ScoreService } from './services/score.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,7 @@ import { ScoreComponent } from './pages/score/score.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ChatService, ScoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

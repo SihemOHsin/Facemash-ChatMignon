@@ -4,7 +4,7 @@ import { VoterComponent } from './pages/voter/voter.component';
 import { ScoreComponent } from './pages/score/score.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'vote', pathMatch: 'full' },
+  { path: '', redirectTo: '/vote', pathMatch: 'full' },
   {path:'vote', component:VoterComponent},
   {path:'score', component:ScoreComponent}
 ];
