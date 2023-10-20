@@ -28,6 +28,9 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
+      - name: List Contents of dist/chat-mignon
+        run: ls -R dist/chat-mignon        
+
       - name: Deploy to Firebase
         run: firebase deploy --token $(cat $HOME/firebase-token) --project chatmignon-72a72
 
