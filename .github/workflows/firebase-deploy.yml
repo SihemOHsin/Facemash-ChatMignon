@@ -29,7 +29,10 @@ jobs:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
       - name: Set Working Directory
-        run: cd .        
+        run: cd . 
+        
+      - name: Print Current Working Directory
+        run: pwd      
 
       - name: Deploy to Firebase
         run: firebase deploy --token $(cat $HOME/firebase-token) --project chatmignon-72a72
